@@ -1,0 +1,49 @@
+# Core dependencies
+# If TensorFlow installation fails, use:
+# tensorflow-cpu>=2.4.0
+# or install with: pip install --no-cache-dir tensorflow>=2.4.0
+tensorflow>=2.4.0
+numpy>=1.19.2
+pandas>=1.1.0
+scikit-learn>=0.24.0
+
+# Audio processing
+librosa>=0.8.0
+soundfile>=0.10.3
+
+# For advanced HiFi-GAN vocoder
+tensorflow-addons>=0.12.0
+matplotlib>=3.3.0
+tqdm>=4.50.0
+
+# For verification script
+sounddevice>=0.4.1
+
+
+# requirements.txt for the Urdu Male-to-Female Voice Conversion script
+
+# Core deep learning framework
+tensorflow>=2.5.0     # Using TensorFlow 2.x for Keras integration
+
+# Numerical computing
+numpy>=1.19.0
+
+# Data handling and manipulation
+pandas>=1.1.0         # Used for loading and processing metadata CSV
+
+# Machine Learning utilities
+scikit-learn>=0.24.0  # Used for train_test_split
+
+# Audio processing
+librosa>=0.8.0        # Core library for audio analysis (loading, STFT, Mel spectrograms, Griffin-Lim)
+soundfile>=0.10.0     # Used for reading and writing WAV audio files
+scipy>=1.5.0          # Often a core dependency for librosa and scikit-learn (signal processing, etc.)
+
+# Optional but recommended for full librosa functionality (pip might install these automatically)
+# audioread>=2.1.5    # Backend for librosa.load on some systems/formats
+# numba>=0.51.0       # For potential performance acceleration in librosa
+
+# Note: For GPU acceleration with TensorFlow, you need compatible NVIDIA drivers,
+# CUDA Toolkit, and cuDNN library installed separately on your system.
+# Check the TensorFlow installation guide for specific version compatibility:
+# https://www.tensorflow.org/install/gpu
